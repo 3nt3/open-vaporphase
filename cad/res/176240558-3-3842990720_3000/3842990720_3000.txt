@@ -1,0 +1,16 @@
+﻿"Symbol";"Value";"Unit";
+"SUPPLIER_NAME";"RS Components";"";
+"TraceParts.PartVersion";"1.1.5";"";
+"SUPPLIER";"Bosch Rexroth";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartNumber";"10-20072015-123740";"";
+"TraceParts.PartLanguage";"en";"";
+"DESIGN";"Bosch Rexroth Aluminium Strut, 30 x 30 mm, 8mm Groove , 3000mm Length";"";
+"TraceParts.InstanceId";"10-20072015-1237404AEP9ZZYXGYSC7YKAG98R882W";"";
+"TraceParts.PartTitle";"Bosch Rexroth Aluminium Strut, 30 x 30 mm, 8mm Groove , 3000mm Length";"";
+"REFERENCE";"3842990720/3000";"";
+"Buy_Now";"https://uk.rs-online.com/web/p/products/3899796?cm_mmc=en-ds-_-mcad-_-traceparts-_-3899796'";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"rs_stock_number";"3899796";"";
+"TraceParts.ClassPath";"RS_COMPONENTS:10-20072015-123740";"";
