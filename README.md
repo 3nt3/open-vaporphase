@@ -3,6 +3,7 @@
 ## Requirements
 
 - Active cooling
+- Ventilation
 
 ## BOM
 
