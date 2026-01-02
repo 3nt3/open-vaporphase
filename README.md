@@ -15,6 +15,7 @@
 | 1 | RS PRO Schwarz Kunststoff Griff, L 112mm H 28 mm B 22mm, Lochabst. 92mm | 456-589 | RS Components | 8 |
 | 1 | Schurter IEC-Steckverbinder C22 250 V, Gerade, Tafelmontage, Stecker / 16A, Schrauben, 3-polig | 866-2640 | RS Components | 3 |
 | 2 | DIN 7991 3 x 10 | N/A | N/A |
+| 1 | M6 Temperature Sensor | N/A | Aliexpress | 2 |
 
 # Safety
 
