@@ -8,6 +8,7 @@
 
 - Active cooling
 - Ventilation
+- Lid switch
 
 ## BOM
 
@@ -20,7 +21,7 @@
 | 1 | Schurter IEC-Steckverbinder C22 250 V, Gerade, Tafelmontage, Stecker / 16A, Schrauben, 3-polig | 866-2640 | RS Components | 3 |
 | 2 | DIN 7991 3 x 10 | N/A | N/A |
 | 1 | M6 Temperature Sensor | N/A | Aliexpress | 2 |
-| 1 | 480x320 IPS TFT Display | N/A | Aliexpress | 15 |
+| 1 | 3.5" IPS TFT LCD Module in 320x480,OPTL TouchScreen,w/ILI9488 | N/A | BuyDisplay or Aliexpress | 1 |
 | 2 | Limitor SF/R Thermosicherung +229°C +200°C 15 A 250V ac axial, Geh.ø 4mm, 8.5mm x 4mm x 8.5mm | 797-6030 | RS Components | 1 |
 | 1 | Thermal paste | N/A | Aliexpress | 5 |
 | 1 | Phoenix Contact Stahl Hutschiene Ungelocht, H. 8mm B. 35mm, L. 250mm | 129-652 | RS Components | 4 |
