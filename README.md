@@ -1,3 +1,7 @@
+# Open Vaporphase
+
+![Open Vaporphase Logo](img/logo.png)
+
 # Hardware
 
 ## Requirements
@@ -16,8 +20,10 @@
 | 1 | Schurter IEC-Steckverbinder C22 250 V, Gerade, Tafelmontage, Stecker / 16A, Schrauben, 3-polig | 866-2640 | RS Components | 3 |
 | 2 | DIN 7991 3 x 10 | N/A | N/A |
 | 1 | M6 Temperature Sensor | N/A | Aliexpress | 2 |
+| 1 | 480x320 IPS TFT Display | N/A | Aliexpress | 15 |
+| 2 | Limitor SF/R Thermosicherung +229°C +200°C 15 A 250V ac axial, Geh.ø 4mm, 8.5mm x 4mm x 8.5mm | 797-6030 | RS Components | 1 |
 
-# Safety
+## Safety
 
 We try to follow relevant EU legislature Directive 2006/42/EC (Machinery Directive) as a source of best practices.
 
