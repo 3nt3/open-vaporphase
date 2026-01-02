@@ -22,18 +22,19 @@
 | 1 | M6 Temperature Sensor | N/A | Aliexpress | 2 |
 | 1 | 480x320 IPS TFT Display | N/A | Aliexpress | 15 |
 | 2 | Limitor SF/R Thermosicherung +229°C +200°C 15 A 250V ac axial, Geh.ø 4mm, 8.5mm x 4mm x 8.5mm | 797-6030 | RS Components | 1 |
+| 1 | Thermal paste | N/A | Aliexpress | 5 |
 
 ## Safety
 
 We try to follow relevant EU legislature Directive 2006/42/EC (Machinery Directive) as a source of best practices.
 
-## Hazards
+### Hazards
 
 - Thermal: High-temperature fluids and surfaces
 - Chemical: Vapor phase fluids (PFPE, Galden, etc.)
 - Electrical
 
-## Ideas
+### Ideas
 
 - Heater control fails OFF
 - Loss of sensor input disables heating
