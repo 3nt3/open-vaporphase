@@ -1,17 +1,108 @@
+import "res/fonts/IBMPlexSans-Regular.ttf";
+import "res/fonts/IBMPlexSans-Bold.ttf";
+
+export global Palette {
+    out property <color> success: #4effa6;
+    out property <color> danger: #f96161;
+    out property <color> background: #28282f;
+    out property <color> tile: #3d3d4c;
+    out property <color> text: #6a6a78;
+    out property <color> text_on_tile: #a7a6ad;
+    out property <color> text_on_tile2: #e5d6d6;
+}
+
+export global Typo {
+    out property <length> label_size: 18px;
+}
+
+export component Tile inherits Rectangle {
+    background: Palette.tile;
+    border-radius: 20px;
+}
+
 export component MainWindow inherits Window {
     width: 480px;
     height: 320px;
     title: "Open Vaporphase";
+    default-font-family: "IBM Plex Sans";
 
     Rectangle {
         width: parent.width;
         height: parent.height;
-        background: darkgray;
+        background: #28282f;
 
-        Text {
-            text: "Hello, Slint!";
-            font-size: 24px;
-            color: white;
+        VerticalLayout {
+            padding: 16px;
+            spacing: 6px;
+            HorizontalLayout {
+                alignment: space-between;
+                Text {
+                    text: "RUNNING";
+                    font-size: Typo.label_size;
+                    color: Palette.success;
+                    font-weight: 700;
+                }
+
+                Text {
+                    text: "Open Vaporphase α0.1";
+                    font-size: Typo.label_size;
+                    color: Palette.text;
+                }
+            }
+
+            GridLayout {
+                spacing: 12px;
+                height: 260px;
+
+                Tile {
+                    width: 60%;
+                    row: 0;
+                    col: 0;
+                    rowspan: 2;
+                    colspan: 2;
+                }
+
+                Tile {
+                    row: 0;
+                    col: 2;
+
+                    VerticalLayout {
+                        height: 100%;
+                        padding: 20px;
+                        spacing: -20px;
+
+                        Text {
+                            text: "173.8 °C";
+                            color: Palette.success;
+                            font-size: 28px;
+                            font-weight: 700;
+                        }
+
+                        Text {
+                            text: "13:12";
+                            color: Palette.text_on_tile;
+                            font-size: 28px;
+                        }
+                    }
+                }
+
+                Tile {
+                    row: 1;
+                    col: 2;
+                    background: Palette.danger;
+                    height: 50%;
+                    TouchArea {
+                        Text {
+                            text: "STOP";
+                            font-size: 28px;
+                            font-weight: 700;
+                            color: Palette.text_on_tile2;
+                            horizontal-alignment: center;
+                            vertical-alignment: center;
+                        }
+                    }
+                }
+            }
         }
     }
 }
