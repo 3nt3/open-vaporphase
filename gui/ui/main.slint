@@ -26,10 +26,14 @@ export component MainWindow inherits Window {
     title: "Open Vaporphase";
     default-font-family: "IBM Plex Sans";
 
+    in property <bool> is_running: true;
+    in property <string> temperature: "0.0";
+    in property <string> time_remaining: "13:12";
+
     Rectangle {
         width: parent.width;
         height: parent.height;
-        background: #28282f;
+        background: Palette.background;
 
         VerticalLayout {
             padding: 16px;
@@ -37,9 +41,9 @@ export component MainWindow inherits Window {
             HorizontalLayout {
                 alignment: space-between;
                 Text {
-                    text: "RUNNING";
+                    text: is_running ? "RUNNING" : "IDLE";
                     font-size: Typo.label_size;
-                    color: Palette.success;
+                    color: is_running ? Palette.success : Palette.text;
                     font-weight: 700;
                 }
 
@@ -72,14 +76,14 @@ export component MainWindow inherits Window {
                         spacing: -20px;
 
                         Text {
-                            text: "173.8 °C";
+                            text: temperature + "°C";
                             color: Palette.success;
                             font-size: 28px;
                             font-weight: 700;
                         }
 
                         Text {
-                            text: "13:12";
+                            text: time_remaining;
                             color: Palette.text_on_tile;
                             font-size: 28px;
                         }
