@@ -26,6 +26,8 @@
 | 2 | Limitor SF/R Thermosicherung +229°C +200°C 15 A 250V ac axial, Geh.ø 4mm, 8.5mm x 4mm x 8.5mm | 797-6030 | RS Components | 1 |
 | 1 | Thermal paste | N/A | Aliexpress | 5 |
 | 1 | Phoenix Contact Stahl Hutschiene Ungelocht, H. 8mm B. 35mm, L. 250mm | 129-652 | RS Components | 4 |
+| 1 | Galden LS 230 400g | RK-10686 | beta-layout.com | 109 |
+
 
 ## Safety
 

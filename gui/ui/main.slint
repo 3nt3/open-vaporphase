@@ -20,6 +20,13 @@ export component Tile inherits Rectangle {
     border-radius: 20px;
 }
 
+export component Tick inherits Text {
+    font-size: 18px;
+    color: Palette.text_on_tile;
+    font-weight: 700;
+    horizontal-alignment: right;
+}
+
 export component MainWindow inherits Window {
     width: 480px;
     height: 320px;
@@ -29,7 +36,8 @@ export component MainWindow inherits Window {
     in property <bool> is_running: true;
     in property <string> temperature: "0.0";
     in property <string> time_remaining: "13:12";
-
+    in property <[float]> past_temperatures: [];
+    in property <int> n_past_temperatures: 20;
     Rectangle {
         width: parent.width;
         height: parent.height;
@@ -64,6 +72,47 @@ export component MainWindow inherits Window {
                     col: 0;
                     rowspan: 2;
                     colspan: 2;
+
+                    HorizontalLayout {
+                        padding: 20px;
+                        VerticalLayout {
+                            Tick {
+                                text: "0";
+                            }
+
+                            Tick {
+                                text: "75";
+                            }
+
+                            Tick {
+                                text: "150";
+                            }
+
+                            Tick {
+                                text: "225";
+                            }
+
+                            Tick {
+                                text: "300";
+                            }
+                        }
+
+                        Path {
+                            width: 80%;
+                            height: 100%;
+                            stroke-width: 2px;
+
+                            MoveTo {
+                                x: 0%;
+                                y: 100%;
+                            }
+
+                            for temp[i] in past_temperatures: id := LineTo {
+                                x: (i / (past_temperatures.length - 1)) * 100%;
+                                y: 100% - (temp / 300.0) * 100%;
+                            }
+                        }
+                    }
                 }
 
                 Tile {
