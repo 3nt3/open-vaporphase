@@ -1,0 +1,17 @@
+export component MainWindow inherits Window {
+    width: 480px;
+    height: 320px;
+    title: "Open Vaporphase";
+
+    Rectangle {
+        width: parent.width;
+        height: parent.height;
+        background: darkgray;
+
+        Text {
+            text: "Hello, Slint!";
+            font-size: 24px;
+            color: white;
+        }
+    }
+}
