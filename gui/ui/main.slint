@@ -97,21 +97,21 @@ export component MainWindow inherits Window {
                             }
                         }
 
-                        Path {
-                            width: 80%;
-                            height: 100%;
-                            stroke-width: 2px;
-
-                            MoveTo {
-                                x: 0%;
-                                y: 100%;
-                            }
-
-                            for temp[i] in past_temperatures: id := LineTo {
-                                x: (i / (past_temperatures.length - 1)) * 100%;
-                                y: 100% - (temp / 300.0) * 100%;
-                            }
-                        }
+                        // Path {
+                        //     width: 80%;
+                        //     height: 100%;
+                        //     stroke-width: 2px;
+                        //
+                        //     MoveTo {
+                        //         x: 0%;
+                        //         y: 100%;
+                        //     }
+                        //
+                        //     for temp[i] in past_temperatures: id := LineTo {
+                        //         x: (i / (past_temperatures.length - 1)) * 100%;
+                        //         y: 100% - (temp / 300.0) * 100%;
+                        //     }
+                        // }
                     }
                 }
 
