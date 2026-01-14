@@ -9,7 +9,7 @@
 - Active cooling
 - Ventilation
 - Lid switch
-- Buzzer to play the Forelle song like a samsung washing machine
+- Buzzer to play the Forelle song like a samsung washing machine (required to be configurable to also imitate a rice cooker)
 
 ## Safety
 
