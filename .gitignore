@@ -1,3 +1,4 @@
 gui/target
 cad/exports
 .FCBak
+.~lock.*.osd*
