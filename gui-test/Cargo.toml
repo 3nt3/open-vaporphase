@@ -1,0 +1,36 @@
+[package]
+edition      = "2024"
+name         = "gui-test"
+rust-version = "1.88"
+version      = "0.1.0"
+resolve      = "2"
+
+[[bin]]
+name = "gui-test"
+path = "./src/bin/main.rs"
+
+[dependencies]
+esp-hal = { path = "../../../other/esp-hal-patched-for-c3-slint/esp-hal", features = ["esp32c3", "unstable"] }
+esp-rtos = { path = "../../../other/esp-hal-patched-for-c3-slint/esp-rtos", features = ["embassy", "esp32c3"] }
+esp-alloc = { path = "../../../other/esp-hal-patched-for-c3-slint/esp-alloc", features = ["esp32c3", "global-allocator"] }
+esp-bootloader-esp-idf = { path = "../../../other/esp-hal-patched-for-c3-slint/esp-bootloader-esp-idf", features = ["esp32c3"] }
+embassy-executor = { version = "0.9.1", features = [] }
+embassy-time     = "0.5.0"
+rtt-target       = "0.6.2"
+static_cell      = "2.1.1"
+slint = { version = "1.14", default-features = false, features = ["compat-1-2", "unsafe-single-threaded", "libm", "renderer-software"] }
+
+[profile.dev]
+opt-level = "s"
+
+[profile.release]
+codegen-units    = 1
+debug            = 2
+debug-assertions = false
+incremental      = false
+lto              = 'fat'
+opt-level        = 's'
+overflow-checks  = false
+
+[build-dependencies]
+slint-build = "1.14"
